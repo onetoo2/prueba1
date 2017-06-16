@@ -45,7 +45,6 @@ h1{
 }
 .img-circle{
     margin-top: 10px;
-    margin-left: 32%;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -61,23 +60,32 @@ h1{
   color: gray;
 }
 
+.contenido{
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+    height: 60%;
+}
 
-/*ESTILO DEL REGISTRO*/
 .mensaje2{
-    margin-top: 40px;
     text-align: center;
     font-size: 1.2em;
+    color: white;
 }
 
 .registro{
     float: left;
     margin-top: 20px;
+    width: 90%;
+    height: 48%;
+    margin-left: 5%;
+
 }
+
 .registro>input{
     font-family: "Segoe UI";
-    width: calc(100% - 70px);
-    margin-bottom: 13px;
-    margin-left: 35px;
+    width: 100%;
+    margin-bottom: 16px;
     height: 35px;
     border-radius: 10px;
     outline: none;
@@ -90,11 +98,14 @@ h1{
     color: black;
 }
 
-.registro>button{
-    font-family: "Segoe UI";
-    margin-top: 17px;
-    width: calc(50% - 33px);
-    margin-left: 110px;
+.botones{
+    width: 50%;
+    height: 40%;
+    margin-top: 185px;
+    margin-left: 25%;
+}
+
+.botones>button{
     height: 35px;
     box-sizing: border-box;
     outline: none;
@@ -103,26 +114,33 @@ h1{
     background-color: #26C5BF;
     border: none;
     color: white;
-    float: left;
 }
 
+#registrar{
+    margin-top: 40px;
+    width: 100%;
+}
 #regresar{
     margin-top: 20px;
+    
+    width: 100%;
 }
-
-.registro>button:hover{
-    width: calc(50% - 37px);
+#registrar:hover{
+    width: calc(100% - 15px);
     height: 32px;
-    margin-left: 112px;
     font-size: 1.1em;
+    margin-left: 1%;
 }
-
-
+#regresar:hover{
+    width: calc(100% - 15px);
+    height: 32px;
+    font-size: 1.1em;
+    margin-left: 1%;
+}
 
 .error{
     float: left;
-    margin-left: 40px;
     font-size: 1em;
-    color: white;
-    margin-bottom: -5px;
+    margin-top: -5px;
+    color: #EC5337;
 }

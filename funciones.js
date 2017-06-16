@@ -34,8 +34,8 @@ function guardar(){
     //Validar si hay algún input en blanco
     if(nombre == "" || correo == "" || contraseña == "" || confirmar == ""){
         document.getElementById('error').innerHTML = "*Hay uno o más campos vacíos.";
+        navigator.vibrate(350);
         document.querySelector('.error').style.fontSize = "1em";
-        document.querySelector('.error').style.color = "#EC5337";
     }
     
     else{
@@ -78,7 +78,7 @@ function guardar(){
             
             localStorage.setItem('contador',contador);
             
-            alert('Listo!, Tus datos han sido guardados exitosamente.');
+            alert('Listo! Tus datos han sido guardados exitosamente.');
             navegar('index.html');
     }
         else{
@@ -98,7 +98,7 @@ function guardar(){
             var contraseñas = JSON.stringify(p);
             localStorage.setItem('contraseñas',contraseñas);
             
-            alert('Listo!, Tus datos han sido guardados exitosamente.');
+            alert('Listo! Tus datos han sido guardados exitosamente.');
             navegar('index.html');
         }
         
@@ -107,8 +107,8 @@ function guardar(){
     else{
         //Mensaje de error si contraseñas no coinciden
         document.getElementById('error').innerHTML = "*Las contraseñas no coinciden.";
+        navigator.vibrate(350);
         document.querySelector('.error').style.fontSize = "1em";
-        document.querySelector('.error').style.color = "#EC5337";
     }
 
     }
@@ -125,8 +125,8 @@ function login(){
     //Validar si hay algún input sin contestar
     if(user=="" || pass==""){
         document.getElementById('error1').innerHTML = "*Hay uno o más campos vacíos.";
+        navigator.vibrate(350);
         document.querySelector('.error1').style.fontSize = "1.1em";
-        document.querySelector('.error').style.color = "#EC5337";
     }
     else{
         //Almacenar los arreglos de usuarios en localStrage en nueva variable
@@ -153,15 +153,15 @@ function login(){
     }
             if(bandera == false){
                 document.getElementById('error1').innerHTML = "*El usuario y contraseña no coinciden.";
+                navigator.vibrate(350);
             document.querySelector('.error1').style.fontSize = "1.1em";
-                document.querySelector('.error').style.color = "#EC5337";
             }
     }
         else{
             //Mensaje de error en caso de que el usuario no esté registrado
             document.getElementById('error1').innerHTML = "*El usuario no está registrado.";
+            navigator.vibrate(350);
             document.querySelector('.error1').style.fontSize = "1.1em";
-            document.querySelector('.error').style.color = "#EC5337";
         }
     }
 
@@ -192,7 +192,7 @@ function guardarPersonales(){
                         navigator.vibrate(250);
                     }
                 document.getElementById('error').innerHTML = "*Ingresa un lenguaje de programación.";
-                document.querySelector('.error').style.color = "#EC5337";
+                navigator.vibrate(350);
                 document.querySelector('.line').style.marginTop = "16px";
                 return;
             }else{
@@ -375,14 +375,12 @@ function guardarAjustes(){
             else{
                 document.getElementById('error').innerHTML = "*Las contraseñas no coinciden.";
                 document.querySelector('.error').style.fontSize = "1em";
-                document.querySelector('.error').style.color = "#EC5337";
             }
         }
     }
     else{
         document.getElementById('error').innerHTML = "*Hay uno o más espacios vacíos.";
                 document.querySelector('.error').style.fontSize = "1em";
-                document.querySelector('.error').style.color = "#EC5337";
     }
 }
 

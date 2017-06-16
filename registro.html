@@ -2,48 +2,49 @@
 
   <head>
       <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Mobile specific meta goodness :)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Ancho del dispositivo, no permite escalar-->
-    <link rel="stylesheet" type="text/css" href="estilo_registro.css">
+ <link rel="stylesheet" type="text/css" href="estilo_registro.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
 
     <script src="./funciones.js"></script>
+      
     </head>
     
     <body>
     <div class="pantalla-inicio">
         
-        
-        
         <div id="linea" class="linea">
         <h1>POMOMIND</h1>
-        <img src="icon.png" class="img-circle" alt="Bird" width="125" height="125"></div>
+        <center><img src="icon.png" class="img-circle" alt="Bird" width="125" height="125"></center></div>
         
         <div class="contenido"> 
-        <p class="mensaje1" id="mensaje1">!Regístrate para disfutar de Pomomind!</p>
-        
-        <section class="registro">
+        <p class="mensaje2" id="mensaje1">!Regístrate para disfutar de Pomomind!</p>
+            
+            
+            <section class="registro">
             
         <input type="text" placeholder="Nombre de usuario" id="usuario">
         <input type="email" placeholder="Correo" id="correo">
         <input type="password" placeholder="Contraseña" id="contraseña">
         <input type="password" placeholder="Confirmar contraseña" id="confirmar-contraseña">
         <p id="error" class="error"></p>
-        <button onclick="guardar()">REGÍSTRATE</button>
-        <button onclick="navegar('index.html')" id="regresar">REGRESAR</button>
             
         </section>
+            
+            <div class="botones">
+        <button onclick="guardar()" id="registrar">REGÍSTRATE</button>
+        <button onclick="navegar('index.html')" id="regresar">REGRESAR</button>
+            </div>
         </div>
         </div>
-        
-        
         
     </body>
 
 
-
 </html>
+
+
+
+
