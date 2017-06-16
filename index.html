@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+      <meta charset="utf-8">
+    <!--Mobile specific meta goodness :)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Ancho del dispositivo, no permite escalar-->
+ <link rel="stylesheet" type="text/css" href="estilo_index.css">
+
+
+    <script src="./funciones.js"></script>
+      
+    </head>
+    
+    <body>
+    <div class="pantalla-inicio">
+        
+        
+        
+        <div id="linea" class="linea">
+        <h1>POMOMIND</h1>
+        <img src="icon.png" class="img-circle" alt="Bird" width="125" height="125"></div>
+        
+        <div class="contenido"> 
+        <p class="mensaje1" id="mensaje1">!Bienvenido a Pomomind!</p>
+        
+        <section class="login">
+            
+        <input type="text" placeholder="Usuario" id="user">
+        <input type="password" placeholder="Contraseña" id="password">
+            <p id="error1" class="error1"></p>
+        <button onclick="login()">INICIAR</button>
+        <button onclick="navegar('registro.html')" id="registro">REGÍSTRATE</button>
+            
+        </section>
+        </div>
+        </div>
+        
+    </body>
+
+
+</html>
