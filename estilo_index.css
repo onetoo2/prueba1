@@ -41,7 +41,7 @@ h1{
     float: left;
     margin-top: 20px;
     width: 90%;
-    height: 80%;
+    height: 35%;
     margin-left: 5%;
 }
 .img-circle{
@@ -80,12 +80,12 @@ h1{
 
 .botones{
     width: 50%;
-    height: 100%;
-    margin-top: 35px;
-    margin-left: 320px;
+    height: 40%;
+    margin-top: 145px;
+    margin-left: 25%;
 }
 
-.botones> button{
+.botones>button{
     float: left;
     height: 35px;
     box-sizing: border-box;
@@ -95,26 +95,29 @@ h1{
     border: none;
     color: white;
     font-size: 1.2em;
-        width: 100%;
-        /*margin-left: 25%;*/
+        width: calc(50% - 25px);
+ 
 }
 #iniciar{
     margin-top: 35px;
+    width: 100%;
 }
 #registro{
     margin-top: 25px;
+    
+    width: 100%;
 }
 #iniciar:hover{
-    width: calc(100% - 45px);
+    width: calc(50% - 45px);
     height: 32px;
     font-size: 1.1em;
-    margin-left: 3%;
+    margin-left: 26%;
 }
 #registro:hover{
-    width: calc(100% - 45px);
+    width: calc(50% - 45px);
     height: 32px;
     font-size: 1.1em;
-    margin-left: 3%;
+    margin-left: 26%;
 }
 .error1{
     float: left;
