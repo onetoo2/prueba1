@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#atajos{
+    position: absolute;
+    margin-left: 69%;
+    margin-top: 3px;
+}
+header {
+	background: #26C5BF;
+	padding: 15px 20px;
+    height: 70px;
+}
+
+		/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+		header:before,
+		header:after {
+		    content:"";
+		    display:table;
+		}
+		
+		header:after {
+		    clear:both;
+		}
+		
+		/* For IE 6/7 (trigger hasLayout) */
+		header {
+		    zoom:1;
+		}
+
+h1.logo a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 23px;
+	line-height: 22px;
+	float: left;
+	letter-spacing: 0.2em;
+    margin-top: 5px;
+}
+
+.mensaje2{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.registro{
+    float: left;
+    margin-top: 27px;
+}
+.registro>input{
+    font-family: "Segoe UI";
+    width: calc(100% - 70px);
+    margin-bottom: 13px;
+    margin-left: 35px;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    float: left;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding-left: 10px;
+    background-color: lightgray;
+    border: none;
+
+}
+
+.registro>button{
+    font-family: "Segoe UI";
+    margin-top: 23px;
+    width: calc(50% - 33px);
+    margin-left: 110px;
+    height: 35px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    background-color: #474e5d;
+    border: none;
+    color: white;
+    float: left;
+    
+}
+
+#regresar{
+    margin-top: 20px;
+    margin-bottom: 125px;
+}
+
+.registro>button:hover{
+    width: calc(50% - 37px);
+    height: 32px;
+    margin-left: 112px;
+    font-size: 1.1em;
+}
+
+#mensaje{
+    font-size: 1.3em;
+    margin-bottom: -1px;
+    margin-left: 35px;
+    color: #555555;
+}
+#line{
+    margin-top: 435;
+}
+#footer{
+    margin-top: -5%;
+}
+
+.error{
+    float: left;
+    margin-left: 40px;
+    font-size: 1em;
+    margin-bottom: -5px;
+}

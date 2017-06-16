@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="description" content="CSS only mobile first navigation">
+  <meta name="author" content="Ian Yates">
+
+  <!--Mobile specific meta goodness :)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--css-->
+  <link rel="stylesheet" href="estilo_app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="./funciones.js"></script>
+      <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  
+
+</head>
+<body id="home" onload="cargarPersonales()">
+
+  <div class="wrapper">
+  <div class="atajos">
+        <img src="ajustes.png" width="27" height="27" onclick="navegar('ajustes.html')">
+        <img src="home.png" width="37" height="37" onclick="navegar('home.html')">
+        <img src="salir.png" class="salir" width="30" height="30" onclick="navegar('index.html')">
+    </div>
+    <header> 
+      <h1 class="logo" if><a href="#">POMOMIND</a></h1>
+    </header>
+    
+    <article>
+    
+      <h2 id="texto1"></h2> 
+      
+      <p id="texto1">Bienvenido a Pomomind. !Toma el control de tu tiempo al programar!</p>
+
+    
+    </article>
+    
+    <article>
+      
+      <h2 id="h2">Iniciar</h2>
+    <img src="laptop.png" width="30" height="30" id="laptop"><p id="texto"> Lenguaje de programación: </p>
+      <center>  <p id="code"> </p></center> 
+    
+    <div style="text-align: center; font-size: 6.5em;" class="reloj">
+    
+    <STRONG  id="Minutos">00 </STRONG>
+    <STRONG  id="Segundos">: 00</STRONG>
+    </div>
+    
+        <div id="contenedor"></div>
+    
+    <div class="botones">
+    <input type="button" class="btn btn-success" id="inicio" value="Start &#9658;" onclick="inicio()" style="font-size: 1.1em;">
+    <input type="button" class="btn btn-danger" id="parar" value="Stop &#8718;"  style="font-size: 1.1em;" onclick="parar()" disabled>
+    <input type="button" class="btn btn-info" id="continuar" value="Resume &#8634;"  style="font-size: 1.1em;" onclick="inicio()" disabled>
+    <input type="button" class="btn btn-warning" id="reinicio" value="Reset &#8635;" style="font-size: 1.1em;" onclick="reinicio()" disabled></div>
+        <div class="footer">
+        <br>
+
+    
+    </article>
+    
+    
+    
+    <!--<nav id="primary_nav">
+    
+      <ul>
+      
+        <li><a href="">Portfolio</a></li>
+      
+        <li><a href="">About Me</a></li>
+      
+        <li><a href="">Nonsense</a></li>
+      
+        <li><a href="">Services</a></li>
+      
+        <li><a href="">Contact</a></li>
+      
+        <li class="top"><a href="#home">Top</a></li>
+      
+      </ul>
+    
+    </nav><!--end primary_nav-->
+    
+    <footer>
+    
+      <p>Copyright &copy;2017 Taller Aplicaciones Móviles Híbridas</p>
+    
+    </footer>
+        </div>
+  </div><!--end wrapper-->
+  
+</body>
+
+</html>
