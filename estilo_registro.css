@@ -21,8 +21,8 @@ h1{
     color: #F7FDFD;
 }
 .linea{
-    width: calc(100%);
-    height: 180px;
+    width: 100%;
+    height: 28%;
     background-color:#26C5BF;
     float: left;
 }
@@ -101,7 +101,7 @@ h1{
 .botones{
     width: 50%;
     height: 40%;
-    margin-top: 185px;
+    margin-top: 190px;
     margin-left: 25%;
 }
 

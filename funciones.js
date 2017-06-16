@@ -141,10 +141,6 @@ function login(){
         
             //Si los usuarios y contraseñas coinciden dirigir al inicio de la app
         if(nom[i] == user && contra[i] == pass){
-        alert('Inicio de sesión exitoso!');
-            z = i;
-            localStorage.setItem('z',z);
-            navegar('home.html');
             bandera = true;
         }
             else{
@@ -155,6 +151,12 @@ function login(){
                 document.getElementById('error1').innerHTML = "*El usuario y contraseña no coinciden.";
                 navigator.vibrate(350);
             document.querySelector('.error1').style.fontSize = "1.1em";
+            }
+            else{
+                alert('Inicio de sesión exitoso!');
+            z = i;
+            localStorage.setItem('z',z);
+            navegar('home.html');
             }
     }
         else{
@@ -193,7 +195,6 @@ function guardarPersonales(){
                     }
                 document.getElementById('error').innerHTML = "*Ingresa un lenguaje de programación.";
                 navigator.vibrate(350);
-                document.querySelector('.line').style.marginTop = "16px";
                 return;
             }else{
                 //localStorage.datos = {'nombre':document.getElementById('name').value,'codigo': document.getElementById('code').value};

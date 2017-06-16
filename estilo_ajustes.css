@@ -17,7 +17,8 @@
 #atajos{
     position: absolute;
     margin-left: 69%;
-    margin-top: 3px;
+    margin-top: 30px;
+        float: left;
 }
 header {
 	background: #26C5BF;
@@ -128,7 +129,7 @@ article {
 }
 
 #guardar{
-    margin-top: 40px;
+    margin-top: 80px;
     width: 100%;
 }
 #cancelar{
@@ -163,7 +164,6 @@ article {
 }
 .error{
     float: left;
-    margin-left: 40px;
     font-size: 1em;
     margin-bottom: -5px;
     color: #EC5337;
