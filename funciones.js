@@ -34,7 +34,11 @@ function guardar(){
     //Validar si hay algún input en blanco
     if(nombre == "" || correo == "" || contraseña == "" || confirmar == ""){
         document.getElementById('error').innerHTML = "*Hay uno o más campos vacíos.";
-        navigator.vibrate(350);
+        if(navigator.vibrate){
+                navigator.vibrate('3000');
+            }else{
+            }
+        
         document.querySelector('.error').style.fontSize = "1em";
     }
     
@@ -107,7 +111,10 @@ function guardar(){
     else{
         //Mensaje de error si contraseñas no coinciden
         document.getElementById('error').innerHTML = "*Las contraseñas no coinciden.";
-        navigator.vibrate(350);
+        if(navigator.vibrate){
+                navigator.vibrate('3000');
+            }else{
+            }
         document.querySelector('.error').style.fontSize = "1em";
     }
 
@@ -125,8 +132,12 @@ function login(){
     //Validar si hay algún input sin contestar
     if(user=="" || pass==""){
         document.getElementById('error1').innerHTML = "*Hay uno o más campos vacíos.";
-        navigator.vibrate(350);
+        
         document.querySelector('.error1').style.fontSize = "1.1em";
+        if(navigator.vibrate){
+                navigator.vibrate('3000');
+            }else{
+            }
     }
     else{
         //Almacenar los arreglos de usuarios en localStrage en nueva variable
@@ -136,34 +147,39 @@ function login(){
         contra = JSON.parse(localStorage['contraseñas']);
         //Validar si hay algún usuario registrado en el arreglo
         if(localStorage.getItem('usuarios'))
-            var bandera;
         for(var i=0; i<=contador; i++){
         
             //Si los usuarios y contraseñas coinciden dirigir al inicio de la app
         if(nom[i] == user && contra[i] == pass){
-            bandera = true;
+            z = i;
+            localStorage.setItem('z', z);
         }
             else{
-                bandera = false;
             }
     }
-            if(bandera == false){
-                document.getElementById('error1').innerHTML = "*El usuario y contraseña no coinciden.";
-                navigator.vibrate(350);
-            document.querySelector('.error1').style.fontSize = "1.1em";
+            if(localStorage.getItem('z')){
+                alert('Inicio de sesión exitoso!');
+            navegar('home.html');
             }
             else{
-                alert('Inicio de sesión exitoso!');
-            z = i;
-            localStorage.setItem('z',z);
-            navegar('home.html');
+                
+                document.getElementById('error1').innerHTML = "*El usuario y contraseña no coinciden.";
+                document.querySelector('.error1').style.fontSize = "1.1em";
+                if(navigator.vibrate){
+                navigator.vibrate('3000');
+            }else{
+            }
+                
             }
     }
         else{
             //Mensaje de error en caso de que el usuario no esté registrado
             document.getElementById('error1').innerHTML = "*El usuario no está registrado.";
-            navigator.vibrate(350);
             document.querySelector('.error1').style.fontSize = "1.1em";
+            if(navigator.vibrate){
+                navigator.vibrate('3000');
+            }else{
+            }
         }
     }
 
@@ -324,7 +340,6 @@ function guardarAjustes(){
     pass = document.getElementById('p').value;
     conf = document.getElementById('confirmar-c').value;
     
-    console.log(document.getElementById('usuario').value);
 
     //Validar si hay algún input en blanco
     
@@ -332,6 +347,7 @@ function guardarAjustes(){
     
       contador = localStorage.getItem('contador');
         z = localStorage.getItem('z');    
+
         
         if(usuario != ""){
             document.getElementById('error').innerHTML = "";
